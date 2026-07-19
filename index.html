@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wolf Digitable — Senior Software Engineering, On Contract</title>
+  <meta name="description" content="Wolf Digitable is a Louisville-based software consultancy: platform architecture, database reliability, data & analytics, and AI-accelerated product development for teams that need senior engineering without the senior headcount." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink:#0f172a; --slate:#334155; --muted:#64748b; --line:#e2e8f0; --bg:#ffffff; --panel:#f8fafc; --accent:#d97706; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--slate); line-height: 1.65; background: var(--bg); }
+    .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; }
+    .brand { font-weight: 900; letter-spacing: .5px; color: var(--ink); font-size: 17px; text-decoration: none; }
+    .brand .mark { color: var(--accent); }
+    header a.cta-sm { font-size: 13px; font-weight: 700; color: var(--ink); text-decoration: none; border: 1px solid var(--line); padding: 8px 16px; border-radius: 999px; }
+    .hero { padding: 84px 0 64px; }
+    .hero h1 { color: var(--ink); font-size: 40px; line-height: 1.15; font-weight: 900; max-width: 760px; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero p.sub { font-size: 19px; color: var(--muted); margin-top: 18px; max-width: 640px; }
+    .cta { display: inline-block; margin-top: 30px; background: var(--ink); color: #fff; font-weight: 800; font-size: 15px; padding: 14px 28px; border-radius: 10px; text-decoration: none; }
+    .cta:hover { background: #1e293b; }
+    .hero .note { display: inline-block; margin-top: 30px; margin-left: 14px; color: var(--muted); font-size: 13px; }
+    .proof { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 0; }
+    .proof .wrap { display: flex; gap: 12px; flex-wrap: wrap; justify-content: space-between; }
+    .stat { min-width: 150px; }
+    .stat b { display: block; color: var(--ink); font-size: 22px; font-weight: 900; }
+    .stat span { font-size: 12.5px; color: var(--muted); }
+    section { padding: 64px 0; }
+    section h2 { color: var(--ink); font-size: 26px; font-weight: 900; margin-bottom: 8px; }
+    section p.lead { color: var(--muted); margin-bottom: 30px; max-width: 640px; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .svc { border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+    .svc h3 { color: var(--ink); font-size: 16.5px; margin-bottom: 8px; }
+    .svc p { font-size: 14px; color: var(--muted); }
+    .svc .tags { margin-top: 14px; font-size: 11.5px; color: var(--accent); font-weight: 700; letter-spacing: .3px; }
+    .case { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 24px 26px; margin-top: 16px; }
+    .case h3 { color: var(--ink); font-size: 16px; }
+    .case p { font-size: 14px; color: var(--muted); margin-top: 6px; }
+    .about { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .about .row { display: flex; gap: 28px; align-items: flex-start; flex-wrap: wrap; }
+    .about .avatar { width: 84px; height: 84px; border-radius: 50%; background: var(--ink); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 34px; flex-shrink: 0; }
+    .about p { max-width: 640px; font-size: 15px; }
+    .about .links { margin-top: 14px; font-size: 14px; }
+    .about .links a { color: var(--accent); font-weight: 700; text-decoration: none; margin-right: 18px; }
+    .engage { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .eng { border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+    .eng h4 { color: var(--ink); font-size: 15px; margin-bottom: 6px; }
+    .eng p { font-size: 13.5px; color: var(--muted); }
+    .contact { text-align: center; padding: 76px 0; }
+    .contact h2 { font-size: 30px; }
+    .contact p { color: var(--muted); margin: 12px auto 26px; max-width: 520px; }
+    footer { border-top: 1px solid var(--line); padding: 26px 0; font-size: 13px; color: var(--muted); }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    footer a { color: var(--muted); text-decoration: none; }
+    @media (max-width: 520px) { .hero h1 { font-size: 30px; } .hero { padding: 56px 0 44px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="/">WOLF <span class="mark">DIGITABLE</span></a>
+      <a class="cta-sm" href="mailto:nick@wolfdigitable.com">Start a conversation</a>
+    </div>
+  </header>
+
+  <div class="hero wrap">
+    <h1>Senior software engineering, <em>on contract</em> — for systems that can't afford to fail.</h1>
+    <p class="sub">Wolf Digitable helps teams ship reliable platforms: cloud architecture, database performance, data &amp; analytics, and AI-accelerated product development. A decade of production experience in regulated healthcare SaaS, available for your hardest problems.</p>
+    <a class="cta" href="mailto:nick@wolfdigitable.com?subject=Project%20inquiry">Book a free intro call</a>
+    <span class="note">Louisville, KY · Remote-friendly · US-based</span>
+  </div>
+
+  <div class="proof">
+    <div class="wrap">
+      <div class="stat"><b>10+ years</b><span>healthcare &amp; regulated SaaS</span></div>
+      <div class="stat"><b>200+</b><span>production SQL Server instances managed</span></div>
+      <div class="stat"><b>Real-time</b><span>messaging systems stabilized at scale</span></div>
+      <div class="stat"><b>Full stack</b><span>React · Node · C#/.NET · Java · AWS</span></div>
+    </div>
+  </div>
+
+  <section class="wrap" id="services">
+    <h2>What we do</h2>
+    <p class="lead">Four focused practices — each one backed by production experience, not slideware.</p>
+    <div class="services">
+      <div class="svc">
+        <h3>Platform &amp; Cloud Architecture</h3>
+        <p>Cloud-native design, micro-frontend deployment systems, CI/CD hardening, and infrastructure-as-code that makes releases boring — in the best way.</p>
+        <div class="tags">AWS · TERRAFORM · GITHUB ACTIONS · CLOUDFRONT/WAF</div>
+      </div>
+      <div class="svc">
+        <h3>Database Reliability &amp; Performance</h3>
+        <p>High-availability architecture, disaster recovery, workload tuning, and schema design for databases that carry real businesses — built on years running a 200+ instance production fleet.</p>
+        <div class="tags">SQL SERVER · POSTGRESQL · ALWAYS ON · HA/DR</div>
+      </div>
+      <div class="svc">
+        <h3>Data &amp; Analytics Platforms</h3>
+        <p>Modern analytics stacks from ingestion to dashboard: warehouse schemas, ETL pipelines, embedded analytics, and self-serve BI your teams actually use.</p>
+        <div class="tags">SNOWFLAKE · LOOKER · POWER BI · ETL</div>
+      </div>
+      <div class="svc">
+        <h3>AI-Accelerated Product Development</h3>
+        <p>Full products shipped fast with AI-assisted engineering — and consulting on adopting these workflows in your own team without sacrificing code quality.</p>
+        <div class="tags">CLAUDE · FULL-STACK DELIVERY · API DESIGN</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="work">
+    <h2>Selected work</h2>
+    <div class="case">
+      <h3>ScratchWolf — consumer data product, built end to end</h3>
+      <p>A lottery-analytics platform we designed, built, and operate: 44-state automated data collection, a resilient scraping/processing pipeline with AI-assisted extraction, a .NET API, and a React Native mobile app — shipped by a one-engineer team using AI-accelerated workflows. <a href="https://scratchwolf.com" style="color:var(--accent);font-weight:700;text-decoration:none;">scratchwolf.com →</a></p>
+    </div>
+    <div class="case">
+      <h3>Real-time healthcare messaging, stabilized</h3>
+      <p>Architected fixes for reconnect failures, delivery gaps, and routing inconsistencies in patient-to-provider chat serving large care-team operations — the kind of production-hardening work that only comes from living with systems under load.</p>
+    </div>
+    <div class="case">
+      <h3>Enterprise analytics modernization</h3>
+      <p>Key contributor migrating a legacy healthcare reporting platform to Snowflake + Looker: warehouse schema design, ETL pipelines, row-level security automation, and embedded dashboards for enterprise clients.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap row" style="padding-top:0;padding-bottom:0;">
+      <div class="avatar">🐺</div>
+      <div>
+        <h2>The person behind the company</h2>
+        <p><strong>Nick Wolf</strong> is a senior software engineer with an architectural focus and more than a decade in healthcare technology — from managing mission-critical database fleets to leading platform modernization and real-time system stabilization. Wolf Digitable is his consulting practice: every engagement gets principal-level attention, because the principal is the one doing the work.</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/nick-wolf">LinkedIn</a>
+          <a href="https://www.nickjwolf.com">Personal site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="engage">
+    <h2>Ways to work together</h2>
+    <div class="engage">
+      <div class="eng"><h4>Architecture &amp; reliability review</h4><p>A focused assessment of your platform, database, or pipeline — findings and a prioritized plan in 1–2 weeks.</p></div>
+      <div class="eng"><h4>Project delivery</h4><p>A defined build — an API, a data pipeline, an analytics stack, a product MVP — delivered end to end.</p></div>
+      <div class="eng"><h4>Fractional senior engineering</h4><p>Ongoing senior capacity for your team: architecture guidance, hard bugs, mentoring, delivery leadership.</p></div>
+    </div>
+  </section>
+
+  <div class="contact">
+    <div class="wrap">
+      <h2>Have a hard problem?</h2>
+      <p>Tell us what's breaking, what's slow, or what you need built. You'll get a straight answer about whether we're the right fit — usually within a day.</p>
+      <a class="cta" href="mailto:nick@wolfdigitable.com?subject=Project%20inquiry">nick@wolfdigitable.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div>© 2026 Wolf Digitable · Louisville, KY</div>
+      <div><a href="https://scratchwolf.com">ScratchWolf</a></div>
+    </div>
+  </footer>
+</body>
+</html>
