@@ -5,6 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wolf Digitable · Senior Software Engineering, On Contract</title>
   <meta name="description" content="Wolf Digitable is a Louisville-based software consultancy: platform architecture, database reliability, data & analytics, and AI-accelerated product development for teams that need senior engineering without the senior headcount." />
+  <link rel="canonical" href="https://wolfdigitable.com/" />
+
+  <!-- Open Graph / Twitter. The site had NONE, so every share on LinkedIn — the main channel a
+       consultancy is actually seen through — rendered as a bare URL with no title, description or
+       image. Link-preview bots do not run JavaScript, so these must be static tags. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wolf Digitable" />
+  <meta property="og:title" content="Wolf Digitable · Senior Software Engineering, On Contract" />
+  <meta property="og:description" content="Platform architecture, database reliability, data &amp; analytics and AI-accelerated product development. 10+ years in healthcare and regulated SaaS. Louisville, KY · remote-friendly." />
+  <meta property="og:url" content="https://wolfdigitable.com/" />
+  <meta property="og:image" content="https://wolfdigitable.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wolf Digitable · Senior Software Engineering, On Contract" />
+  <meta name="twitter:description" content="Senior engineering on contract for systems that can't afford to fail. Louisville, KY · remote-friendly." />
+  <meta name="twitter:image" content="https://wolfdigitable.com/assets/og-image.png" />
+
+  <!-- .ico FIRST: crawlers and older browsers look for /favicon.ico by default and want a raster
+       square; both /favicon.ico and /favicon.svg were 404 before this. -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- gstatic serves the font FILES; googleapis only serves the CSS pointing at them. Without this
+       the browser pays a full DNS+TLS handshake the moment it discovers the @font-face. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- ProfessionalService + Person. Everything below is already stated on the page — nothing is
+       invented. This is what lets Google understand the site is a Louisville software consultancy
+       rather than an unclassified page, which is the difference for "software consultant
+       Louisville" style searches. sameAs carries a REAL profile, so it is honest. -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService",
+   "@id":"https://wolfdigitable.com/#business",
+   "name":"Wolf Digitable",
+   "url":"https://wolfdigitable.com/",
+   "image":"https://wolfdigitable.com/assets/og-image.png",
+   "email":"nick@wolfdigitable.com",
+   "description":"Software consultancy: platform architecture, database reliability, data & analytics, and AI-accelerated product development.",
+   "areaServed":{"@type":"Country","name":"United States"},
+   "address":{"@type":"PostalAddress","addressLocality":"Louisville","addressRegion":"KY","addressCountry":"US"},
+   "founder":{"@id":"https://wolfdigitable.com/#nick"},
+   "knowsAbout":["Platform architecture","Database reliability","SQL Server","Data engineering","Cloud architecture","AWS",".NET","React","Node.js"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person",
+   "@id":"https://wolfdigitable.com/#nick",
+   "name":"Nick Wolf",
+   "jobTitle":"Software Consultant",
+   "email":"nick@wolfdigitable.com",
+   "url":"https://wolfdigitable.com/",
+   "worksFor":{"@id":"https://wolfdigitable.com/#business"},
+   "sameAs":["https://www.linkedin.com/in/nick-wolf"]}
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     h1,h2,h3,h4,.brand { font-family: 'Fraunces', Georgia, serif !important; }
