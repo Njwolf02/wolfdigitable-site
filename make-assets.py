@@ -13,7 +13,8 @@ Run: python3 make-assets.py
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-HERE = Path(__file__).resolve().parent
+# Writes into public/, the folder the Worker serves (wrangler.jsonc assets.directory).
+HERE = Path(__file__).resolve().parent / "public"
 INK, ACCENT, PAPER = "#0f172a", "#d97706", "#ffffff"
 SS = 8
 

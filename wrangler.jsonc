@@ -1,0 +1,28 @@
+// wolfdigitable.com — a Cloudflare Worker serving this repo's static files.
+//
+// Why not GitHub Pages (2026-11-09): its certificate cannot renew while Cloudflare proxies the
+// domain. It expired on 2026-10-17 and every page answered 526 until this move. scratchwolf.com
+// hit the same failure and moved on 2026-10-20.
+//
+// Deployed by .github/workflows/deploy.yml on every push to main. The token needs Workers
+// Scripts: Edit on the account and Workers Routes: Edit on this zone; the routes below are set
+// from here so nothing has to be configured by hand in the dashboard.
+{
+  "name": "wolfdigitable-site",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "wolfdigitable.com/*", "zone_name": "wolfdigitable.com" },
+    { "pattern": "www.wolfdigitable.com/*", "zone_name": "wolfdigitable.com" }
+  ],
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    // The www redirect has to run before an asset match, or www.wolfdigitable.com/ would serve the page
+    // under a second hostname instead of redirecting to the canonical one.
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash"
+  }
+}
